@@ -176,35 +176,15 @@ class Ui_MainWindow(object):
         self.help_text.setText("1~99 사이의 숫자를 맞추는 게임입니다.\n숫자를 입력하고 ok버튼을 누르세요.\n기회는 7번입니다.")
 
         #기초 변수 설정
-        global count, end_stat
         end_stat = False
         count = 7
         com_num = str(random.randrange(1,100))
+        usr_num = self.input_text.toPlainText() 
 
-        self.game_start(end_stat, count, com_num)
+        self.ok_button.clicked.connect(lambda : self.game_start(end_stat, count, usr_num, com_num)) 
+        print(count, com_num, usr_num)
 
-    def game_start(self, end_stat, count, com_num):
-
-
-        usr_num = self.input_text.toPlainText() #사용자가 적은 숫자 받아옴
-        self.ok_button.clicked.connect(lambda:self.game(self, end_stat, count, usr_num, com_num)) #game 함수로 연결
-        print(count, end_stat)
-
-        #성공시 end_stat True 상태
-        if end_stat == True:
-            self.main_text.setText("Congratulations!")
-            self.help_text.setText("정답은 %s이었습니다.\n%s번만에 맞추셨습니다."%(com_num, 7 - count))
-            self.answer.setText("%s"%usr_num)
-            count = 7 #아래의 if문 무시를 위함
-        
-        #기회 모두 소모시 count = 0
-        if count <= 0:
-            self.main_text.setText("YOU FILED...")
-            self.help_text.setText("정답은 %s이었습니다."%com_num)
-            self.answer.setText("%s"%com_num)
-
-    #클릭시그널 작동하는 함수
-    def game(self, ok_button, end_stat, count, usr_num, com_num):
+    def game_start(self, end_stat, count, usr_num, com_num):
 
         self.input_text.clear()
 
@@ -224,7 +204,18 @@ class Ui_MainWindow(object):
             end_stat = True
             count += -1
 
-        return (count, end_stat) 
+        #성공시 end_stat True 상태
+        if end_stat == True:
+            self.main_text.setText("Congratulations!")
+            self.help_text.setText("정답은 %s이었습니다.\n%s번만에 맞추셨습니다."%(com_num, 7 - count))
+            self.answer.setText("%s"%usr_num)
+            count = 7 #아래의 if문 무시를 위함
+        
+        #기회 모두 소모시 count = 0
+        if count <= 0:
+            self.main_text.setText("YOU FILED...")
+            self.help_text.setText("정답은 %s이었습니다."%com_num)
+            self.answer.setText("%s"%com_num)
         
         
 
