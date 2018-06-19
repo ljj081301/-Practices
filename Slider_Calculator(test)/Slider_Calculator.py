@@ -23,6 +23,8 @@ class Ui_MainWindow(object):
         self.sl_result = QtWidgets.QSlider(self.centralwidget)
         self.sl_result.setGeometry(QtCore.QRect(260, 70, 121, 311))
         self.sl_result.setOrientation(QtCore.Qt.Vertical)
+        self.sl_result.setMinimum(0)
+        self.sl_result.setMaximum(200)
         self.sl_result.setObjectName("sl_result")
 
         #왼쪽 슬라이더
@@ -117,6 +119,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.sl_1.valueChanged['int'].connect(self.text_1.setNum)
         self.sl_2.valueChanged['int'].connect(self.text_2.setNum)
+        self.calcul_button.clicked.connect(lambda : self.calcul())
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -129,6 +132,11 @@ class Ui_MainWindow(object):
         self.text_2.setText(_translate("MainWindow", "Value 2"))
         self.text_result.setText(_translate("MainWindow", "Result"))
 
+    def calcul(self):
+        first = int(self.text_1.text())
+        second = int(self.text_2.text())
+        self.text_result.setNum(first+second)
+        self.sl_result.setValue(int(self.text_result.text()))
 
 if __name__ == "__main__":
     import sys
