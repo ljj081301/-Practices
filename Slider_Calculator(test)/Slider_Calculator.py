@@ -117,9 +117,14 @@ class Ui_MainWindow(object):
 
         #이벤트
         self.retranslateUi(MainWindow)
+        ##add_num = eval(self.text_1.text() + self.text_2.text())
         self.sl_1.valueChanged['int'].connect(self.text_1.setNum)
         self.sl_2.valueChanged['int'].connect(self.text_2.setNum)
-        self.calcul_button.clicked.connect(lambda : self.calcul())
+        ##self.sl_1.valueChanged['int'].connect(self.text_result.setNum(add_num))
+        ##self.sl_2.valueChanged['int'].connect(self.text_result.setNum(add_num))
+        self.sl_1.valueChanged['int'].connect(self.calcul)
+        self.sl_2.valueChanged['int'].connect(self.calcul)
+        self.calcul_button.clicked.connect(self.indicate)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -128,15 +133,18 @@ class Ui_MainWindow(object):
         self.calcul_button.setText(_translate("MainWindow", "Done!"))
         self.left.setText(_translate("MainWindow", "→"))
         self.right.setText(_translate("MainWindow", "←"))
-        self.text_1.setText(_translate("MainWindow", "Value 1"))
-        self.text_2.setText(_translate("MainWindow", "Value 2"))
+        self.text_1.setText(_translate("MainWindow", "0"))
+        self.text_2.setText(_translate("MainWindow", "0"))
         self.text_result.setText(_translate("MainWindow", "Result"))
-
+        
     def calcul(self):
-        first = int(self.text_1.text())
-        second = int(self.text_2.text())
-        self.text_result.setNum(first+second)
+        add_num = int(self.text_1.text()) + int(self.text_2.text())
+        self.text_result.setNum(add_num)
         self.sl_result.setValue(int(self.text_result.text()))
+
+    def indicate(self):
+        message = "%s + %s = %s"%(self.text_1.text(), self.text_2.text(), self.text_result.text())
+        print(message)
 
 if __name__ == "__main__":
     import sys
