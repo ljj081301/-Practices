@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox
 
 class Ui_MainWindow(object):
 
@@ -143,8 +144,13 @@ class Ui_MainWindow(object):
         self.sl_result.setValue(int(self.text_result.text()))
 
     def indicate(self):
-        message = "%s + %s = %s"%(self.text_1.text(), self.text_2.text(), self.text_result.text())
-        print(message)
+        message = QMessageBox()
+        #QMessageBox.about(self, "Calculation result", "%s + %s = %s"%(self.text_1.text(), self.text_2.text(), self.text_result.text()))
+        message.setText("%s + %s = %s"%(self.text_1.text(), self.text_2.text(), self.text_result.text()))
+        message.setWindowTitle("Calculation result")
+        message.setStandardButtons(QMessageBox.Ok)
+        message.show()
+
 
 if __name__ == "__main__":
     import sys
