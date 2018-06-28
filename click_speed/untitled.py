@@ -73,15 +73,13 @@ class Ui_Form(object):
         self.click_button.clicked.connect(self.count_func)
 
     def start(self):
+        
         print("스타트 시작")
         self.start_button.hide()
-        print("1초뒤 시작")
-        print("보인다!")
         self.click_button.show()
-        """
-        
         self.time_flow()
-
+        
+        """
         print("종료중")
         self.click_button.hide()
         time.sleep(1)
