@@ -38,7 +38,7 @@ class Ui_Form(object):
 
         #숫자표시 라벨
         self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(95, 20, 130, 50))
+        self.label.setGeometry(QtCore.QRect(85, 20, 160, 50))
         font = QtGui.QFont()
         font.setFamily("210 Gulim")
         font.setPointSize(16)
@@ -48,7 +48,7 @@ class Ui_Form(object):
 
         #time left 라벨
         self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(80, 190, 90, 30))
+        self.label_2.setGeometry(QtCore.QRect(80, 190, 110, 30))
         font = QtGui.QFont()
         font.setFamily("210 Gulim")
         font.setPointSize(16)
@@ -76,25 +76,15 @@ class Ui_Form(object):
         
         print("스타트 시작")
         self.start_button.hide()
+
+        self.show_click()
+        
+    def show_click(self):
+        print("3초 대기")
+        time.sleep(3)
         self.click_button.show()
         self.time_flow()
-        
-        """
-        print("종료중")
-        self.click_button.hide()
-        time.sleep(1)
-        self.start_button.show()
-        
-        print("변수 재설정")
-        time_left = 10
-        self.label_3.setNum(time_left)
-        """
 
-    def count_func(self):
-        global count
-        count += 1
-        self.label.setNum(count)
-        
     def time_flow(self):
         global time_left
         while time_left != 0:
@@ -103,7 +93,23 @@ class Ui_Form(object):
             time.sleep(1)
             time_left -= 1
             self.label_3.setNum(time_left)
+        self.back()
 
+    def back(self):
+        print("종료중")
+        self.click_button.hide()
+        time.sleep(1)
+        self.start_button.show()
+        
+        print("변수 재설정")
+        self.label_3.setNum(10)
+
+    def count_func(self):
+        global count
+        count += 1
+        self.label.setNum(count)
+        
+    
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
