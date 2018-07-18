@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "click_speed(real time)", "click_speed(real time).pyproj", "{B38A72E7-F8B3-4EF9-8F19-06E133828D91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B38A72E7-F8B3-4EF9-8F19-06E133828D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38A72E7-F8B3-4EF9-8F19-06E133828D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C93A68D4-E2BB-461A-AEC2-7DC58104FBB3}
+	EndGlobalSection
+EndGlobal
