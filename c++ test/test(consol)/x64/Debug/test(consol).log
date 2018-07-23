@@ -1,3 +1,2 @@
-﻿  stdafx.cpp
-  test(consol).cpp
-  test(consol).vcxproj -> D:\Programing\#Git\ljj\c++ test\test(consol)\x64\Debug\test(consol).exe
+﻿test(consol).obj : error LNK2005: main이(가) hello.obj에 이미 정의되어 있습니다.
+D:\Programing\#Git\ljj\c++ test\test(consol)\x64\Debug\test(consol).exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
