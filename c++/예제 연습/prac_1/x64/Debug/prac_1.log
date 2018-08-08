@@ -1,0 +1,4 @@
+﻿  prac_1.cpp
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(26): warning C4552: '>': 식의 결과가 사용되지 않습니다.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(53): warning C4552: '>': 식의 결과가 사용되지 않습니다.
+  prac_1.vcxproj -> D:\Programing\#Git\-Practices\c++\예제 연습\prac_1\x64\Debug\prac_1.exe
