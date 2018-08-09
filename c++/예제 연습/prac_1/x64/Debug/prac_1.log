@@ -1,4 +1,14 @@
 ﻿  prac_1.cpp
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(26): warning C4552: '>': 식의 결과가 사용되지 않습니다.
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(53): warning C4552: '>': 식의 결과가 사용되지 않습니다.
-  prac_1.vcxproj -> D:\Programing\#Git\-Practices\c++\예제 연습\prac_1\x64\Debug\prac_1.exe
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(27): warning C4552: '>': 식의 결과가 사용되지 않습니다.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(54): warning C4552: '>': 식의 결과가 사용되지 않습니다.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(86): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::length': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(86): error C2446: '<=': 'int'에서 'unsigned __int64 (__cdecl std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'(으)로 변환되지 않았습니다.
+  d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(86): note: 정수 계열 값에서 멤버 포인터 값으로의 변환이 없습니다.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(91): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::length': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(91): error C2446: '>': 'int'에서 'unsigned __int64 (__cdecl std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'(으)로 변환되지 않았습니다.
+  d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(91): note: 정수 계열 값에서 멤버 포인터 값으로의 변환이 없습니다.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(93): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::length': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(93): error C2446: '<=': 'unsigned __int64 (__cdecl std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'에서 'int'(으)로 변환되지 않았습니다.
+  d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(93): note: 이 변환이 가능한 컨텍스트가 없습니다.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(95): error C2659: '=': 함수를 왼쪽 피연산자로 사용했습니다.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(97): error C2659: '=': 함수를 왼쪽 피연산자로 사용했습니다.
