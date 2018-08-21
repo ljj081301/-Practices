@@ -1,14 +1,52 @@
 ﻿  prac_1.cpp
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(27): warning C4552: '>': 식의 결과가 사용되지 않습니다.
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(54): warning C4552: '>': 식의 결과가 사용되지 않습니다.
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(86): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::length': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(86): error C2446: '<=': 'int'에서 'unsigned __int64 (__cdecl std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'(으)로 변환되지 않았습니다.
-  d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(86): note: 정수 계열 값에서 멤버 포인터 값으로의 변환이 없습니다.
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(91): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::length': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(91): error C2446: '>': 'int'에서 'unsigned __int64 (__cdecl std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'(으)로 변환되지 않았습니다.
-  d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(91): note: 정수 계열 값에서 멤버 포인터 값으로의 변환이 없습니다.
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(93): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::length': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(93): error C2446: '<=': 'unsigned __int64 (__cdecl std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'에서 'int'(으)로 변환되지 않았습니다.
-  d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(93): note: 이 변환이 가능한 컨텍스트가 없습니다.
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(95): error C2659: '=': 함수를 왼쪽 피연산자로 사용했습니다.
-d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(97): error C2659: '=': 함수를 왼쪽 피연산자로 사용했습니다.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(34): warning C4552: '>': 식의 결과가 사용되지 않습니다.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(61): warning C4552: '>': 식의 결과가 사용되지 않습니다.
+d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(210): warning C4552: '>=': 식의 결과가 사용되지 않습니다.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\xutility(1078): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\xutility(1075): note: 컴파일 중인 함수 템플릿 인스턴스화 'bool std::_Debug_lt_pred<_Pr&,double&,double&>(std::greater<int>&,_Ty1,_Ty2,std::_Dbfile_t,std::_Dbline_t) noexcept(<expr>)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Pr=std::greater<int>,
+              _Ty1=double &,
+              _Ty2=double &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3939): note: 컴파일 중인 함수 템플릿 인스턴스화 'std::pair<_RanIt,_RanIt> std::_Partition_by_median_guess_unchecked<_RanIt,_Pr>(_RanIt,_RanIt,_Pr)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _RanIt=double *,
+              _Pr=std::greater<int>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3973): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::_Sort_unchecked<_Iter,_Fn>(_RanIt,_RanIt,__int64,_Pr)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Iter=double *,
+              _Fn=std::greater<int>,
+              _RanIt=double *,
+              _Pr=std::greater<int>
+          ]
+  d:\programing\#git\-practices\c++\예제 연습\prac_1\prac_1.cpp(206): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::sort<double*,std::greater<int>>(const _RanIt,const _RanIt,_Pr)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _RanIt=double *,
+              _Pr=std::greater<int>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3846): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3853): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3868): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3888): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\xutility(1080): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3845): note: 컴파일 중인 함수 템플릿 인스턴스화 'bool std::_Debug_lt_pred<_Pr&,double&,double&>(std::greater<int>&,_Ty1,_Ty2,std::_Dbfile_t,std::_Dbline_t) noexcept(false)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Pr=std::greater<int>,
+              _Ty1=double &,
+              _Ty2=double &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3939): note: 컴파일 중인 함수 템플릿 인스턴스화 'std::pair<_RanIt,_RanIt> std::_Partition_by_median_guess_unchecked<_RanIt,_Pr>(_RanIt,_RanIt,_Pr)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _RanIt=double *,
+              _Pr=std::greater<int>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\xutility(1081): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  prac_1.vcxproj -> D:\Programing\#Git\-Practices\c++\예제 연습\prac_1\x64\Debug\prac_1.exe
